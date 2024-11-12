@@ -1,10 +1,12 @@
 //Using Express Framework
 const express = require('express')
 const mongoose = require('mongoose')
+const cors = require('cors')
 
 //Create instance of Express
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 //Define port for server
 const port  = 8000
